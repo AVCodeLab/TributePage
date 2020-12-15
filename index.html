@@ -6,65 +6,86 @@
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--Bootstrap css link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--Bootstrap JS links-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+<!--    Start Main-->
     <div id="main" >
-        <div class="navbar">
+<!--        Start Nav bar-->
+        <div class="navbar navbar-dark bg-primary">
             <nav class="hover-nav">
                 <ul>
                     <h1 id="title">Mahendra Singh Dhoni</h1>
                     <li><a href="">Achievements</a></li>
-                    <li><a href="About.html">About</a></li>
+                    <li><a href="#about">About</a></li>
                 </ul>
             </nav>
         </div>
-        <div id="img-div">
-            <figure id="img-div">
-                <img id="image" src="assets/img/MainBackgroundimg.jpg" alt="MS Dhoni">
-            </figure>
-            <figurecaption id="img-caption">Best Captain. Best WicketKeeper. Best Finisher</figurecaption>
-        </div>
-        <div class="msg-container">
-            <div id="slider">
-                <div class="msg-col">
-                    <h2>Quotes on MS Dhoni</h2>
-                    <p>Dhoni is my hero. We talk about Sachin Tendulkar, Virender Sehwag but this boy has as much talent as anyone in the game.
-                    </p>
-                    <p>- Kapil Dev.</p>
-                </div>
-                <div class="msg-col">
-                    <h2>Quotes on MS Dhoni</h2>
-                    <p>Dhoni is the best captain i have played under.</p>
-                    <p>- Sachin Tendulkar.</p>
-                </div>
-                <div class="msg-col">
-                    <h2>Quotes on MS Dhoni</h2>
-                    <p>If 15 runs are needed off the last over,pressure is on the bowler,</p>
-                    <p>not on MS Dhoni.</p>
-                    <p>- Ian Bhisop.</p>
-                </div>
-                <div class="msg-col">
-                    <h2>Quotes on MS Dhoni</h2>
-                    <p>He's obviously a legend of cricket but he's such a good bloke and so relaxed. I love playing cricket with him on the same team.</p>
-                    <p>- Usman Khawaja</p>
+<!--        Start Quotes Section-->
+        <section id="#quotesSection">
+            <div class="msg-container">
+                <div id="slider">
+                    <div class="msg-col">
+                        <h2>Quotes on MS Dhoni</h2>
+                        <p>Dhoni is my hero.We talk about Sachin Tendulkar, Virender Sehwag but this boy has as much talent,<br>as anyone in the game.
+                        </p>
+                        <p>- Kapil Dev.</p>
+                    </div>
+                    <div class="msg-col">
+                        <h2>Quotes on MS Dhoni</h2>
+                        <p class="text-justify">Dhoni is the best captain i have played under.</p>
+                        <p>- Sachin Tendulkar.</p>
+                    </div>
+                    <div class="msg-col">
+                        <h2>Quotes on MS Dhoni</h2>
+                        <p class="text-justify">If 15 runs are needed off the last over,pressure is<br>on the bowler, not on MS Dhoni.</p>
+                        <p>- Ian Bhisop.</p>
+                    </div>
+                    <div class="msg-col">
+                        <h2>Quotes on MS Dhoni</h2>
+                        <p class="text-justify">He's obviously a legend of cricket but he's such a good bloke and so relaxed. I love playing cricket with him on the same team.</p>
+                        <p>- Usman Khawaja</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="controller">
-            <div id="line1"></div>
-            <div id="line2"></div>
-            <div id="line3"></div>
-            <div id="line4"></div>   
-            <div id="active"></div>
-        </div>
-         <div id="description">
-            <p id="tribute-info">About this Legend</p>
-            <p>Mahendra Singh Dhoni or MS Dhoni is one of the most popular Indian cricketers. Putting his great leadership skills to test, he served as the former captain of the Indian national cricket team; however, he captained the team only in limited-overs format from 2007 to 2016, and in Test cricket from 2008 to 2014. Also known for his excellent wicket-keeping skills, he was a gem to the Indian team even in some very hard situations.</p>
-        </div>
-        <div class="linkDiv">
-            <a href="About.html" class="button">More Info</a>
-        </div>
-        <a id="tribute-link" href="https://www.sportskeeda.com/player/ms-dhoni" target="_blank">More info and stats of this great player</a>
+            <div class ="jumbotron-background">
+                <figure id="img-div">
+                    <img id="image"  class="img-fluid" src="assets/img/MainBackgroundimg.jpg" alt="MS Dhoni">
+                </figure>
+                <figurecaption id="img-caption" style="font-family: monospace">Best Captain. Best WicketKeeper. Best Finisher</figurecaption>
+            </div>
+            <div class="controller">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+                <div id="line4"></div>
+                <div id="active"></div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container-fluid" id="description">
+                <p id="tribute-info">About this Legend</p>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-justify">Mahendra Singh Dhoni, also called M.S. Dhoni, (born July 7, 1981, Ranchi, Bihar [now Jharkhand] state, India), Indian cricketer whose rise to prominence in the early 21st century culminated in his captaincy of the Indian national team that won the one-day Cricket World Cup in 2011. Dhoni made his international debut in 2004. His talent with the bat came to the fore in an innings of 148 runs against Pakistan in his fifth international match. Within a year he joined the India Test team, where he quickly established himself with a century (100 or more runs in a single innings) against Pakistan. Despite his inexperience, Dhoni took over the captaincy of the one-day side in 2007 and led India to the Twenty20 (T20) world title. Series wins over Australia and Sri Lanka, among others, moved India to the top of the International Cricket Council (ICC) Test rankings for the first time in December 2009. Dhoni was honoured for his play with the ICC One Day International Player of the Year Award in 2008 and 2009. In the 2011 one-day World Cup, Dhoni’s dashing innings of 91 not out—in front of a home crowd in Mumbai—paved the way for India’s victory over Sri Lanka in the final. He also led India to an appearance in the semifinals of the 2015 Cricket World Cup. Dhoni stopped serving as India’s captain in 2017, having led his country in 331 international matches, the most for a captain in the sport’s history.</p>
+                        <p class="text-justify">The explosion of T20 cricket on the Indian subcontinent paved the way for the formation of the Indian Premier League (IPL) in 2008. In the league’s inaugural season, Dhoni signed with the Chennai Super Kings for $1.5 million, which at the time was the largest contract in the IPL. He subsequently led the team to two consecutive titles (2010, 2011). The Super Kings franchise earned a two-season suspension from the IRL in 2016 for its role in a match-fixing scandal, and Dhoni then joined the Rising Pune Supergiant. In 2018 he returned to the Chennai Super Kings, and that year the team won the IPL championship.</p>
+                        <p class="text-justify">Dhoni’s life was the subject of the hit Bollywood film M.S. Dhoni: The Untold Story (2016).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="linkDiv">
+<!--                <a href="About.html" class="button">More Info</a>-->
+                <a id="tribute-link" href="https://www.sportskeeda.com/player/ms-dhoni" target="_blank" class="button">More info</a>
+            </div>
+        </section>
+
+<!--        <a id="tribute-link" href="https://www.sportskeeda.com/player/ms-dhoni" target="_blank">More info and stats of this great player</a>-->
         
         <script>
             var slider = document.getElementById('slider');
