@@ -163,6 +163,7 @@ nav ul li a:hover{
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1.5rem;
+    font-family: monospace;
     line-height: 1.5;
     border-radius: .25rem;
     text-decoration: none !important;
@@ -189,4 +190,56 @@ nav ul li a:hover{
     font-family: monospace;
     font-size: 1.3rem;
     text-align: justify-all;
+}
+
+/*achievements page*/
+#achivements{
+    background: #d8eefe;
+    height: 50px;
+}
+#achivements p{
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+.achivements-button{
+    display: block;
+    font-family: monospace;
+}
+.table th,td{
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+/*Records Page*/
+#records li, h2,h3{
+    font-family: monospace;
+}
+#records li{
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+#records ul{
+    padding: 30px;
+}
+
+.smallHeader{
+    text-decoration: underline
+}
+
+/*Footer*/
+
+footer{
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: #007bff !important;
+    border-top: 4px solid white;
+    margin: 0;
+}
+
+footer p{
+    text-align: center;
+    color: #94a1b2;
+    font-family: monospace;
 }
